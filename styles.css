@@ -1,0 +1,180 @@
+/* รีเซ็ต CSS เบื้องต้น */
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+/* ul {
+  list-style: none;
+} */
+button,
+input,
+select {
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+iframe {
+  border: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/static/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/static/Inter-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 8%);
+  color: #fff;
+  font-family: "Inter", serif;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 327px;
+}
+
+.profile__card {
+  background-color: hsl(0, 0%, 12%);
+  padding: 24px;
+  text-align: center;
+}
+
+@media screen and (min-width: 376px) {
+  .profile__card {
+    padding: 40px;
+  }
+}
+
+.profile__picture {
+  margin-bottom: 24px;
+}
+
+.profile__picture-img {
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+  border-radius: 999px;
+}
+
+.profile__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.profile__name {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.profile__location {
+  font-weight: 700;
+  font-size: 14px;
+  color: hsl(75, 94%, 57%);
+}
+
+.profile__bio {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.profile__social-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.profile__social-item {
+  background-color: hsl(0, 0%, 20%);
+  padding: 10px 0;
+  list-style-type: none;
+  border-radius: 8px;
+}
+
+.profile__social-item:hover {
+  background-color: hsl(75, 94%, 57%);
+  cursor: pointer;
+  color: #000;
+}
+
+.profile__social-link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+  font-size: 14px;
+}
